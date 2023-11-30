@@ -8,6 +8,7 @@ import { UiHeaderComponent } from './component/ui-header/ui-header.component';
 import { ContentComponent } from './component/content/content.component';
 import { SubHeaderComponent } from './component/sub-header/sub-header.component';
 import { ProductComponent } from './component/product/product.component';
+import {TransferHttpCacheModule} from '@nguniversal/common';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { ProductComponent } from './component/product/product.component';
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     HttpClientModule,
+    TransferHttpCacheModule
 
 
   ],
