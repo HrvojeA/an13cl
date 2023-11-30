@@ -19,7 +19,7 @@ import { ProductComponent } from './component/product/product.component';
 
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     HttpClientModule,
 

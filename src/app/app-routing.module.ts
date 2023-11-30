@@ -10,10 +10,10 @@ const routes: Routes = [
   { path: 'product', component: ProductComponent}
 ];
 @NgModule({
-  imports: [RouterModule.forRoot(routes,{
-    scrollPositionRestoration: 'top'
-
-  })],
+  imports: [RouterModule.forRoot(routes, {
+    scrollPositionRestoration: 'top',
+    initialNavigation: 'enabledBlocking'
+})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
